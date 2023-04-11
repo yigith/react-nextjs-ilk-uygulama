@@ -1,9 +1,11 @@
+import Alinti from "./Alinti";
 import Gordum from "./Gordum";
+import KisiListesi from "./KisiListesi";
 import OzluSoz from "./OzluSoz";
 import Sayac from "./Sayac";
 
 function Home() {
-  let ad = "Ali";
+  let ad = "Dünya";
   let mevsimler = ["İlkbahar", "Yaz", "Sonbahar", "Kış"];
 
   return (
@@ -16,6 +18,10 @@ function Home() {
       <Sayac />
       <Sayac deger={10} />
       <Sayac deger={100} />
+
+      <KisiListesi />
+
+      <Alinti />
 
       <h2 className="text-2xl font-bold mt-2">Mevsimler</h2>
       <ul className="list-disc ml-6">
