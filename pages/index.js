@@ -1,5 +1,6 @@
 import Gordum from "./Gordum";
 import OzluSoz from "./OzluSoz";
+import Sayac from "./Sayac";
 
 function Home() {
   let ad = "Ali";
@@ -12,6 +13,9 @@ function Home() {
       </h1>
       <p>İlk Next.js sayfanız.</p>
       <OzluSoz />
+      <Sayac />
+      <Sayac deger={10} />
+      <Sayac deger={100} />
 
       <h2 className="text-2xl font-bold mt-2">Mevsimler</h2>
       <ul className="list-disc ml-6">
