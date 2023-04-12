@@ -10,6 +10,13 @@ export default function KisiListesi() {
         setAd("");
     };
 
+    const sil = (i) => {
+        // const yeniAdlar = [...adlar];
+        // yeniAdlar.splice(i, 1);
+        // setAdlar(yeniAdlar);
+        setAdlar(adlar.filter((ad, indeks) => indeks != i));
+    };
+
     return (
         <div>
             <form onSubmit={handleSubmit} className="bg-white shadow-sm rounded p-4 my-2">
@@ -21,7 +28,7 @@ export default function KisiListesi() {
                 <ul className="list-disc ml-6 mt-3">
                     {adlar.map((ad, i) =>
                         <li key={i}>
-                            {ad}
+                            {ad} <button type="button" onClick={() => sil(i)}>&times;</button>
                         </li>
                     )}
                 </ul>
